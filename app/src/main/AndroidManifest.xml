@@ -2,13 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ahmadfauzi.materialdesigntry" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.ahmadfauzi.activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,19 +23,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SubActivity"
+            android:name="com.example.ahmadfauzi.activities.SubActivity"
             android:label="@string/title_activity_sub" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.example.ahmadfauzi.activities.MainActivity" />
         </activity>
         <activity
-            android:name=".ActivityUsingTabLibrary"
+            android:name="com.example.ahmadfauzi.activities.ActivityUsingTabLibrary"
             android:label="@string/title_activity_activity_tab_using_library" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.example.ahmadfauzi.activities.MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.ahmadfauzi.activities.VectorTestActivity"
+            android:label="@string/title_activity_vector_test" >
+        </activity>
+        <activity
+            android:name=".ActivityRecyclerItemAnimations"
+            android:label="@string/title_activity_activity_recycler_item_animations" >
+        </activity>
+        <service android:name="com.example.ahmadfauzi.services.MyService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
     </application>
 
 </manifest>

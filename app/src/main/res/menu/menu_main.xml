@@ -14,9 +14,23 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/action_vector_test"
+        android:orderInCategory="120"
+        android:title="VectorTestActivity"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_recyclerview_animation"
+        android:orderInCategory="130"
+        android:title="RecyclerViewAnimation"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/navigate"
         android:icon="@drawable/ic_action_next_item"
         android:orderInCategory="200"
         android:title="@string/next"
         app:showAsAction="always" />
+
+
 </menu>

@@ -4,27 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ahmadfauzi.materialdesigntry.ActivityUsingTabLibrary">
+    tools:context="com.example.ahmadfauzi.activities.ActivityUsingTabLibrary">
 
     <include
         android:id="@+id/app_bar"
         layout="@layout/app_bar" />
 
-   <it.neokree.materialtabs.MaterialTabHost
-       android:id="@+id/materialTabHost"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_below="@id/app_bar"
-       app:textColor="@android:color/white"
-       app:iconColor="@android:color/white"
-       app:primaryColor="@color/primaryColor"
-       app:accentColor="@color/accentColor"
-       app:hasIcons="true"/>
+    <it.neokree.materialtabs.MaterialTabHost
+        android:id="@+id/materialTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/app_bar"
+        app:textColor="@android:color/white"
+        app:iconColor="@android:color/white"
+        app:primaryColor="@color/primaryColor"
+        app:accentColor="@color/accentColor"
+        app:hasIcons="true"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/materialTabHost"
         android:layout_weight="1"/>
+
 </LinearLayout>

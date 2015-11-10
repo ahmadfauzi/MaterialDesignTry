@@ -17,5 +17,12 @@
     </string-array>
 
     <string name="title_activity_activity_tab_using_library">ActivityTabUsingLibrary</string>
+    <string name="title_activity_vector_test">VectorTestActivity</string>
+    <string name="error_timeout">Oops! Your Connection Timed Out</string>
+    <string name="error_auth_failure">Oops! Authentification is Failed</string>
+    <string name="error_server">Oops! Server is Error</string>
+    <string name="error_network">Oops! Network is Error</string>
+    <string name="error_parse">Oops! Data Received Was An Unreadable Mess</string>
+    <string name="title_activity_activity_recycler_item_animations">ActivityRecyclerItemAnimations</string>
 
 </resources>

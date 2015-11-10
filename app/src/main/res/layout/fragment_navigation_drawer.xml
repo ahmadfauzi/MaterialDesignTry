@@ -5,23 +5,23 @@
     android:background="@android:color/white"
     tools:context="com.example.ahmadfauzi.materialdesigntry.NavigationDrawerFragment">
 
-    <LinearLayout
-        android:id="@+id/containerDrawerImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#03706a">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/containerDrawerImage"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="#03706a">-->
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="280dp"
-            android:layout_height="280dp"
-            android:layout_marginTop="@dimen/margin_top_image"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/ic_picture" />
-    </LinearLayout>
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="280dp"-->
+            <!--android:layout_height="280dp"-->
+            <!--android:layout_marginTop="@dimen/margin_top_image"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:src="@drawable/ic_picture" />-->
+    <!--</LinearLayout>-->
 
     <android.support.v7.widget.RecyclerView
-        android:layout_below="@id/containerDrawerImage"
         android:id="@+id/drawerList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
